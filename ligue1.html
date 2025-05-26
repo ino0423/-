@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>2024-25 리그 1 순위표</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      padding: 30px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    thead {
+      background-color: #333;
+      color: white;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    /* 구간별 배경색 */
+    .ucl td {
+      background-color: #d0f0ff; /* 챔피언스리그 */
+    }
+    .ucl-qual td {
+      background-color: #c0e0ff; /* 챔피언스리그 예선 */
+    }
+    .uel td {
+      background-color: #ffe8b3; /* 유로파리그 */
+    }
+    .conference td {
+      background-color: #e3e3e3; /* 컨퍼런스리그 예선 */
+    }
+    .relegation td {
+      background-color: #ffd6d6; /* 강등권 */
+    }
+    /* 구분 설명 스타일 */
+    .legend {
+      margin-top: 20px;
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .legend div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .legend span.box {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+    }
+    .box.ucl { background-color: #d0f0ff; }
+    .box.ucl-qual { background-color: #c0e0ff; }
+    .box.uel { background-color: #ffe8b3; }
+    .box.conference { background-color: #e3e3e3; }
+    .box.relegation { background-color: #ffd6d6; }
+  </style>
+</head>
+<body>
+  <h2>2024-25 리그 1 순위표</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>순위</th>
+        <th>팀명</th>
+        <th>경기수</th>
+        <th>승점</th>
+        <th>승</th>
+        <th>무</th>
+        <th>패</th>
+        <th>득점</th>
+        <th>실점</th>
+        <th>득실차</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="ucl"><td>1</td><td>파리 생제르맹</td><td>34</td><td>84</td><td>26</td><td>6</td><td>2</td><td>92</td><td>35</td><td>57</td></tr>
+      <tr class="ucl"><td>2</td><td>올림피크 마르세유</td><td>34</td><td>65</td><td>20</td><td>5</td><td>9</td><td>74</td><td>47</td><td>27</td></tr>
+      <tr class="ucl"><td>3</td><td>모나코</td><td>34</td><td>61</td><td>18</td><td>7</td><td>9</td><td>63</td><td>41</td><td>22</td></tr>
+      <tr class="ucl-qual"><td>4</td><td>니스</td><td>34</td><td>60</td><td>17</td><td>9</td><td>8</td><td>66</td><td>41</td><td>25</td></tr>
+      <tr class="uel"><td>5</td><td>릴</td><td>34</td><td>60</td><td>17</td><td>9</td><td>8</td><td>52</td><td>36</td><td>16</td></tr>
+      <tr class="conference"><td>6</td><td>올랭피크 리옹</td><td>34</td><td>57</td><td>17</td><td>6</td><td>11</td><td>65</td><td>46</td><td>19</td></tr>
+      <tr><td>7</td><td>스트라스부르</td><td>34</td><td>57</td><td>16</td><td>9</td><td>9</td><td>56</td><td>44</td><td>12</td></tr>
+      <tr><td>8</td><td>랑스</td><td>34</td><td>52</td><td>15</td><td>7</td><td>12</td><td>42</td><td>39</td><td>3</td></tr>
+      <tr><td>9</td><td>브레스트</td><td>34</td><td>50</td><td>15</td><td>5</td><td>14</td><td>52</td><td>59</td><td>-7</td></tr>
+      <tr><td>10</td><td>툴루즈</td><td>34</td><td>42</td><td>11</td><td>9</td><td>14</td><td>44</td><td>43</td><td>1</td></tr>
+      <tr><td>11</td><td>오세르</td><td>34</td><td>42</td><td>11</td><td>9</td><td>14</td><td>48</td><td>51</td><td>-3</td></tr>
+      <tr><td>12</td><td>렌</td><td>34</td><td>41</td><td>13</td><td>2</td><td>19</td><td>51</td><td>50</td><td>1</td></tr>
+      <tr><td>13</td><td>낭트</td><td>34</td><td>36</td><td>8</td><td>12</td><td>14</td><td>39</td><td>52</td><td>-13</td></tr>
+      <tr><td>14</td><td>앙제</td><td>34</td><td>36</td><td>10</td><td>6</td><td>18</td><td>32</td><td>53</td><td>-21</td></tr>
+      <tr><td>15</td><td>르 아브르</td><td>34</td><td>34</td><td>10</td><td>4</td><td>20</td><td>40</td><td>71</td><td>-31</td></tr>
+      <tr class="relegation"><td>16</td><td>랭스</td><td>34</td><td>33</td><td>8</td><td>9</td><td>17</td><td>33</td><td>47</td><td>-14</td></tr>
+      <tr class="relegation"><td>17</td><td>생테티엔</td><td>34</td><td>30</td><td>8</td><td>6</td><td>20</td><td>39</td><td>77</td><td>-38</td></tr>
+      <tr class="relegation"><td>18</td><td>몽펠리에</td><td>34</td><td>16</td><td>4</td><td>4</td><td>26</td><td>23</td><td>79</td><td>-56</td></tr>
+    </tbody>
+  </table>
+
+  <div class="legend">
+    <div><span class="box ucl"></span> UEFA 챔피언스리그 진출</div>
+    <div><span class="box ucl-qual"></span> UEFA 챔피언스리그 예선 진출</div>
+    <div><span class="box uel"></span> UEFA 유로파리그 진출</div>
+    <div><span class="box conference"></span> UEFA 컨퍼런스리그 예선 진출</div>
+    <div><span class="box relegation"></span> 리그 강등</div>
+  </div>
+</body>
+</html>
