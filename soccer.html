@@ -3,39 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <title>축구 리그</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      height: 100vh;
+    }
+
+    .side {
+      background-color: #ddd;
+    }
+
+    .side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .content {
+      padding: 20px;
+      background-color: white;
+      overflow-y: auto;
+    }
+
+    header {
+      text-align: center;
+      background-color: #222;
+      color: white;
+      padding: 20px;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      background-color: #eee;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section h2 {
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      font-size: 22px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>축구 리그 정보</h1>
-</header>
+<div class="layout">
+  <!-- 왼쪽 이미지 -->
+  <div class="side">
+    <img src="ronaldo1.jpg" alt="왼쪽 이미지">
+  </div>
 
-<nav>
-  <a href="index.html">홈</a>
-  <a href="soccer.html">축구</a>
-  <a href="baseball.html">야구</a>
-</nav>
+  <!-- 중앙 콘텐츠 -->
+  <div class="content">
+    <header>
+      <h1>축구 리그 정보</h1>
+    </header>
 
-<main>
-  <section>
-    <h2>해외 축구</h2>
-    <ul>
-      <li><a href="epls.html#schedule">EPL 일정</a> | <a href="epl.html#ranking">EPL 순위</a></li>
-      <li><a href="laligas.html#schedule">라리가 일정</a> | <a href="laliga.html#ranking">라리가 순위</a></li>
-      <li><a href="serieas.html#schedule">세리에 A 일정</a> | <a href="seriea.html#ranking">세리에 A 순위</a></li>
-      <li><a href="bundesligas.html#schedule">분데스리가 일정</a> | <a href="bundesliga.html#ranking">분데스리가 순위</a></li>
-      <li><a href="ligue1s.html#schedule">리그 1 일정</a> | <a href="ligue1.html#ranking">리그 1 순위</a></li>
-    </ul>
-  </section>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="soccer.html">축구</a>
+      <a href="baseball.html">야구</a>
+    </nav>
 
-  <section>
-    <h2>국내 축구</h2>
-    <ul>
-      <li><a href="kleagues.html#schedule">K리그 일정</a> | <a href="kleague.html#ranking">K리그 순위</a></li>
-    </ul>
-  </section>
-</main>
+    <main>
+      <section>
+        <h2>해외 축구</h2>
+        <ul>
+          <li><a href="epls.html#schedule">EPL 일정</a> | <a href="epl.html#ranking">EPL 순위</a></li>
+          <li><a href="laligas.html#schedule">라리가 일정</a> | <a href="laliga.html#ranking">라리가 순위</a></li>
+          <li><a href="serieas.html#schedule">세리에 A 일정</a> | <a href="seriea.html#ranking">세리에 A 순위</a></li>
+          <li><a href="bundesligas.html#schedule">분데스리가 일정</a> | <a href="bundesliga.html#ranking">분데스리가 순위</a></li>
+          <li><a href="ligue1s.html#schedule">리그 1 일정</a> | <a href="ligue1.html#ranking">리그 1 순위</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>국내 축구</h2>
+        <ul>
+          <li><a href="kleagues.html#schedule">K리그 일정</a> | <a href="kleague.html#ranking">K리그 순위</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <!-- 오른쪽 이미지 -->
+  <div class="side">
+    <img src="messi1.jpg" alt="오른쪽 이미지">
+  </div>
+</div>
 
 </body>
 </html>

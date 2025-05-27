@@ -4,30 +4,133 @@
   <meta charset="UTF-8">
   <title>야구 리그</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    .layout {
+      display: flex;
+      height: 100vh; /* 전체 화면 높이 */
+    }
+
+    .side {
+      flex: 1;
+    }
+
+    .side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .content {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+      background-color: white;
+      padding: 100px;
+    }
+
+    header {
+      text-align: center;
+      background-color: #222;
+      color: white;
+      padding: 20px;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      background-color: #eee;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    section h2 {
+      border-bottom: 20px solid #ccc;
+      margin-bottom: 20px;
+      padding-bottom: 50px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li, section > li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>야구 리그 정보</h1>
-</header>
+<div class="layout">
+  <!-- 왼쪽 이미지 -->
+  <div class="side">
+    <img src="otani1.jpg" alt="왼쪽 이미지">
+  </div>
 
-<nav>
-  <a href="index.html">홈</a>
-  <a href="soccer.html">축구</a>
-  <a href="baseball.html">야구</a>
-</nav>
+  <!-- 중앙 콘텐츠 -->
+  <div class="content">
+    <header>
+      <h1>야구 리그 정보</h1>
+    </header>
 
-<main>
-  <section>
-    <h2>해외 야구</h2>
-     <li><a href="mlbs.html#schedule">mlb 일정</a> | <a href="mlb.html#ranking">mlb 순위</a></li>
-  </section>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="soccer.html">축구</a>
+      <a href="baseball.html">야구</a>
+    </nav>
 
-  <section>
-    <h2>국내 야구</h2>
-    <li><a href="kbos.html#schedule">kbo 일정</a> | <a href="kbo.html#ranking">kbo 순위</a></li>
-  </section>
-</main>
+    <main>
+      <section>
+        <h2>해외 야구</h2>
+        <ul>
+          <li><a href="mlbs.html#schedule">MLB 일정</a> | <a href="mlb.html#ranking">MLB 순위</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>국내 야구</h2>
+        <ul>
+          <li><a href="kbos.html#schedule">KBO 일정</a> | <a href="kbo.html#ranking">KBO 순위</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <!-- 오른쪽 이미지 -->
+  <div class="side">
+    <img src="leedaho.jpg" alt="오른쪽 이미지">
+  </div>
+</div>
 
 </body>
 </html>

@@ -1,98 +1,80 @@
 body {
-    margin: 0;
-    font-family: sans-serif;
-    background: #f0f0f0;
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0f0f0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header, footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background: #444;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background: #666;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.side-image img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.main-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 768px) {
+  .main-grid {
+    grid-template-columns: 1fr 2fr;
   }
+
   
-  header {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  .side-image:last-child {
+    display: none;
   }
-  
-  nav {
-    background: #444;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+}
+
+
+@media (max-width: 480px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
   }
-  
+
   nav a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
+    padding: 10px 12px;
+    font-size: 14px;
   }
-  
-  nav a:hover {
-    background: #666;
-  }
-  
-  /* 기본 그리드: 3열 */
-  .grid-layout {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    align-items: start;
-  }
-  
-  .left-side, .right-side {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .left-side img,
-  .right-side img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .main-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  }
-  
-  h2 {
-    margin-top: 0;
-  }
-  
-  /* ✅ 중간 화면: 2열 (768px 이하) */
-  @media (max-width: 768px) {
-    .grid-layout {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .right-side img {
-      max-height: 150px;
-      object-fit: cover;
-    }
-  }
-  
-  /* ✅ 작은 화면: 1열 (480px 이하) */
-  @media (max-width: 480px) {
-    .grid-layout {
-      grid-template-columns: 1fr;
-    }
-  
-    .left-side,
-    .right-side {
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-  
-    .left-side img,
-    .right-side img {
-      width: 45%;
-      margin: 5px;
-    }
-  
-    .main-content {
-      margin-top: 20px;
-    }
-  }
-  
+}
