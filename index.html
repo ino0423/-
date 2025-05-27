@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>스포츠 정보 메인</title>
+  <title>해외 국내 야구 축구 정보</title>
   <style>
     body {
       margin: 0;
@@ -41,7 +42,7 @@
     }
 
     .side-image {
-      width: 20%;
+      width: 25%;
       display: flex;
       flex-direction: column;
       gap: 15px;
@@ -51,14 +52,15 @@
       width: 100%;
       border-radius: 10px;
     }
+.main-content {
+  width: 80%;
+  min-height: 600px; 
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
 
-    .main-content {
-      width: 55%;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
 
     h2 {
       margin-top: 0;
@@ -73,9 +75,8 @@
 
 <nav>
   <a href="soccer.html">축구</a>
-  <a href="basketball.html">농구</a>
   <a href="baseball.html">야구</a>
-  <a href="predict.html">승부예측</a>
+ 
 </nav>
 
 <div class="container">
@@ -84,22 +85,45 @@
   </div>
 
   <div class="main-content">
-    <h2>오늘의 경기</h2>
-    <ul>
-      <li>KBO - LG vs 두산 (18:30)</li>
-      <li>K리그 - 울산 vs 수원 (19:00)</li>
-      <li>NBA - Lakers vs Celtics (09:00)</li>
-    </ul>
-
     <h2>스포츠 뉴스</h2>
-    <p><strong>[속보]</strong> 손흥민 드디어 유관? 버스야무지게타</p>
+     <p><strong>[속보]</strong>  <a href="https://m.sports.naver.com/wfootball/article/076/0004280979">'미쳤다' 유로파리그 우승 영웅, 손흥민 이렇게 존경했다니...SON 전용 축구화 착용+이름 각인까지</a></p>
+<p><strong>[속보]</strong>  <a href="https:https://m.sports.naver.com/wbaseball/article/117/0003947728">“김하성 단 한 번의 스윙으로…여전히 녹슬지 않은 모습” 美호평, 426억원 유격수 명예회복의 시간이 온다</a></p>
+<p><strong>[속보]</strong>  <a href="https://m.sports.naver.com/kbaseball/article/109/0005315456">KIA 망연자실, 그렇게 도루를 말렸건만...김도영 또 햄스트링 손상 판정 "28일 2차 검진"</a></p>
+    <h2>스포츠 영상</h2>
+    <p>
+   <iframe width="500" height="400" src="https://www.youtube.com/embed/-lqU6Z9iE0Y?si=iVKxJbYmFgfecusg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="500" height="400" src="https://www.youtube.com/embed/R8swB7hS-cA?si=GbLulmFMHgtm8Sj7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+  </p>
   </div>
 
   <div class="side-image">
     <img src="baseball1.png" alt="오른쪽 이미지 1">
-    <img src="basketball1.png" alt="오른쪽 이미지 2">
   </div>
 </div>
-
+<p><div id="disqus_thread"></div>
+    <script>
+       
+        (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://web-3r5vzhuvcr.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></p><p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+  </p>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/67e9026344bc3b19163f7999/1inj32lhc';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 </html>

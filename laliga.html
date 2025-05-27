@@ -1,113 +1,150 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<title>2024-25 분데스리가 순위표</title>
-<style>
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    padding: 30px;
-  }
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  }
-  thead {
-    background-color: #333;
-    color: white;
-  }
-  th, td {
-    padding: 12px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-  }
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  /* 진출권 별 배경색 */
-  .ucl td { background-color: #d0f0ff; }      /* 챔피언스리그 */
-  .uel td { background-color: #ffe8b3; }      /* 유로파리그 */
-  .conference td { background-color: #e3e3e3; } /* 컨퍼런스리그 예선 */
-  .relegation td { background-color: #ffd6d6; }  /* 강등권 */
-  /* 구분 설명 */
-  .legend {
-    margin-top: 20px;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-  .legend div {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .legend span.box {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 3px;
-  }
-  .box.ucl { background-color: #d0f0ff; }
-  .box.uel { background-color: #ffe8b3; }
-  .box.conference { background-color: #e3e3e3; }
-  .box.relegation { background-color: #ffd6d6; }
-</style>
+  <meta charset="UTF-8" />
+  <title>2024-25 라리가 순위표</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      padding: 30px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    thead {
+      background-color: #333;
+      color: white;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    /* 구간별 배경색 */
+    .ucl td {
+      background-color: #d0f0ff; /* 챔피언스리그 */
+    }
+    .uel td {
+      background-color: #ffe8b3; /* 유로파리그 */
+    }
+    .conference td {
+      background-color: #e3e3e3; /* 컨퍼런스리그 예선 */
+    }
+    .relegation td {
+      background-color: #ffd6d6; /* 강등권 */
+    }
+    /* 구분 설명 스타일 */
+    .legend {
+      margin-top: 20px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .legend div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .legend span.box {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+    }
+    .box.ucl { background-color: #d0f0ff; }
+    .box.uel { background-color: #ffe8b3; }
+    .box.conference { background-color: #e3e3e3; }
+    .box.relegation { background-color: #ffd6d6; }
+  </style>
 </head>
 <body>
+  <h2>2024-25 라리가 순위표</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>순위</th>
+        <th>팀명</th>
+        <th>경기수</th>
+        <th>승점</th>
+        <th>승</th>
+        <th>무</th>
+        <th>패</th>
+        <th>득점</th>
+        <th>실점</th>
+        <th>득실차</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="ucl"><td>1</td><td>바르셀로나</td><td>37</td><td>85</td><td>27</td><td>4</td><td>6</td><td>99</td><td>39</td><td>60</td></tr>
+      <tr class="ucl"><td>2</td><td>레알 마드리드</td><td>38</td><td>84</td><td>26</td><td>6</td><td>6</td><td>78</td><td>38</td><td>40</td></tr>
+      <tr class="ucl"><td>3</td><td>아틀레티코 마드리드</td><td>38</td><td>74</td><td>21</td><td>11</td><td>6</td><td>64</td><td>30</td><td>34</td></tr>
+      <tr class="ucl"><td>4</td><td>아틀레틱 빌바오</td><td>37</td><td>70</td><td>19</td><td>13</td><td>5</td><td>54</td><td>26</td><td>28</td></tr>
+      <tr class="ucl"><td>5</td><td>비야레알</td><td>37</td><td>67</td><td>19</td><td>10</td><td>8</td><td>67</td><td>49</td><td>18</td></tr>
 
-<h2>2024-25 분데스리가 순위표</h2>
+      <tr class="uel"><td>6</td><td>레알 베티스</td><td>38</td><td>60</td><td>16</td><td>12</td><td>10</td><td>57</td><td>50</td><td>7</td></tr>
+      <tr class="uel"><td>7</td><td>셀타 데 비고</td><td>38</td><td>55</td><td>16</td><td>7</td><td>15</td><td>59</td><td>57</td><td>2</td></tr>
 
-<table>
-  <thead>
-    <tr>
-      <th>순위</th>
-      <th>팀명</th>
-      <th>경기수</th>
-      <th>승점</th>
-      <th>승</th>
-      <th>무</th>
-      <th>패</th>
-      <th>득점</th>
-      <th>실점</th>
-      <th>득실차</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="ucl"><td>1</td><td>바이에른 뮌헨</td><td>34</td><td>82</td><td>25</td><td>7</td><td>2</td><td>99</td><td>32</td><td>67</td></tr>
-    <tr class="ucl"><td>2</td><td>바이엘 레버쿠젠</td><td>34</td><td>69</td><td>19</td><td>12</td><td>3</td><td>72</td><td>43</td><td>29</td></tr>
-    <tr class="ucl"><td>3</td><td>프랑크푸르트</td><td>34</td><td>60</td><td>17</td><td>9</td><td>8</td><td>68</td><td>46</td><td>22</td></tr>
-    <tr class="ucl"><td>4</td><td>보루시아 도르트문트</td><td>34</td><td>57</td><td>17</td><td>6</td><td>11</td><td>71</td><td>51</td><td>20</td></tr>
-    <tr class="uel"><td>5</td><td>프라이부르크</td><td>34</td><td>55</td><td>16</td><td>7</td><td>11</td><td>49</td><td>53</td><td>-4</td></tr>
-    <tr class="conference"><td>6</td><td>마인츠 05</td><td>34</td><td>52</td><td>14</td><td>10</td><td>10</td><td>55</td><td>43</td><td>12</td></tr>
-    <tr class="conference"><td>7</td><td>RB 라이프치히</td><td>34</td><td>51</td><td>13</td><td>12</td><td>9</td><td>53</td><td>48</td><td>5</td></tr>
-    <tr class="conference"><td>8</td><td>베르더 브레멘</td><td>34</td><td>51</td><td>14</td><td>9</td><td>11</td><td>54</td><td>57</td><td>-3</td></tr>
-    <tr class="conference"><td>9</td><td>슈투트가르트</td><td>34</td><td>50</td><td>14</td><td>8</td><td>12</td><td>64</td><td>53</td><td>11</td></tr>
-    <tr><td>10</td><td>보루시아 글라트바흐</td><td>34</td><td>45</td><td>13</td><td>6</td><td>15</td><td>55</td><td>57</td><td>-2</td></tr>
-    <tr><td>11</td><td>볼프스부르크</td><td>34</td><td>43</td><td>11</td><td>10</td><td>13</td><td>56</td><td>54</td><td>2</td></tr>
-    <tr><td>12</td><td>아우크스부르크</td><td>34</td><td>43</td><td>11</td><td>10</td><td>13</td><td>35</td><td>51</td><td>-16</td></tr>
-    <tr><td>13</td><td>우니온 베를린</td><td>34</td><td>40</td><td>10</td><td>10</td><td>14</td><td>35</td><td>51</td><td>-16</td></tr>
-    <tr><td>14</td><td>상 파울리</td><td>34</td><td>32</td><td>8</td><td>8</td><td>18</td><td>28</td><td>41</td><td>-13</td></tr>
-    <tr><td>15</td><td>TSG 호펜하임</td><td>34</td><td>32</td><td>7</td><td>11</td><td>16</td><td>46</td><td>68</td><td>-22</td></tr>
-    <tr><td>16</td><td>하이덴하임</td><td>34</td><td>29</td><td>8</td><td>5</td><td>21</td><td>37</td><td>64</td><td>-27</td></tr>
-    <tr class="relegation"><td>17</td><td>홀슈타인 </td><td>34</td><td>25</td><td>6</td><td>7</td><td>21</td><td>49</td><td>80</td><td>-31</td></tr>
-    <tr class="relegation"><td>18</td><td>보훔</td><td>34</td><td>25</td><td>6</td><td>7</td><td>21</td><td>33</td><td>67</td><td>-34</td></tr>
-  </tbody>
-</table>
+      <tr class="conference"><td>8</td><td>바예카노</td><td>38</td><td>52</td><td>13</td><td>13</td><td>12</td><td>41</td><td>45</td><td>-4</td></tr>
+      <tr><td>9</td><td>오사수나</td><td>38</td><td>52</td><td>12</td><td>16</td><td>10</td><td>48</td><td>52</td><td>-4</td></tr>
+      <tr><td>10</td><td>마요르카</td><td>38</td><td>48</td><td>13</td><td>9</td><td>16</td><td>35</td><td>44</td><td>-9</td></tr>
+      <tr><td>11</td><td>레알 소시에다드</td><td>38</td><td>46</td><td>13</td><td>7</td><td>18</td><td>35</td><td>46</td><td>-11</td></tr>
+      <tr><td>12</td><td>발렌시아</td><td>38</td><td>46</td><td>11</td><td>13</td><td>14</td><td>44</td><td>54</td><td>-10</td></tr>
+      <tr><td>13</td><td>헤타페</td><td>38</td><td>42</td><td>11</td><td>9</td><td>18</td><td>34</td><td>39</td><td>-5</td></tr>
+      <tr><td>14</td><td>지로나</td><td>38</td><td>42</td><td>11</td><td>9</td><td>18</td><td>44</td><td>56</td><td>-12</td></tr>
+      <tr><td>15</td><td>에스파뇰</td><td>38</td><td>42</td><td>11</td><td>9</td><td>18</td><td>40</td><td>51</td><td>-11</td></tr>
+      <tr><td>16</td><td>알라베스</td><td>38</td><td>42</td><td>10</td><td>12</td><td>16</td><td>38</td><td>48</td><td>-10</td></tr>
+      <tr><td>17</td><td>세비야</td><td>37</td><td>41</td><td>10</td><td>11</td><td>16</td><td>40</td><td>51</td><td>-11</td></tr>
 
-<div class="legend">
-  <div><span class="box ucl"></span> UEFA 챔피언스리그 진출</div>
-  <div><span class="box uel"></span> UEFA 유로파리그 진출</div>
-  <div><span class="box conference"></span> UEFA 컨퍼런스리그 예선 진출</div>
-  <div><span class="box relegation"></span> 리그 강등</div>
+      <tr class="relegation"><td>18</td><td>레가네스</td><td>38</td><td>40</td><td>9</td><td>13</td><td>16</td><td>39</td><td>56</td><td>-17</td></tr>
+      <tr class="relegation"><td>19</td><td>라스 팔마스</td><td>38</td><td>32</td><td>8</td><td>8</td><td>22</td><td>40</td><td>61</td><td>-21</td></tr>
+      <tr class="relegation"><td>20</td><td>바야돌리드</td><td>38</td><td>16</td><td>4</td><td>4</td><td>30</td><td>26</td><td>90</td><td>-64</td></tr>
+    </tbody>
+    <div style="text-align:center; margin-top: 40px;">
+  <a href="index.html" style="
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  ">
+    🏠 홈으로 돌아가기
+  </a>
 </div>
+   <div style="text-align:center; margin-top: 40px;">
+  <a href="soccer.html" style="
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  ">
+     이전으로 돌아가기
+  </a>
+</div>
+  </table>
 
+  <div class="legend">
+    <div><span class="box ucl"></span> UEFA 챔피언스리그 진출</div>
+    <div><span class="box uel"></span> UEFA 유로파리그 진출</div>
+    <div><span class="box conference"></span> UEFA 컨퍼런스리그 예선 진출</div>
+    <div><span class="box relegation"></span> 리그 강등</div>
+  </div>
 </body>
 </html>
